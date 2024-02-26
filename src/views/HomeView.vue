@@ -41,7 +41,7 @@
         }"
       >
         
-        <strong>🚌 abhibus.com</strong>
+        <strong>🚌 cleartrip.com</strong>
       </span>
     </footer>
   </div>
@@ -81,15 +81,15 @@ import CreateGameForm from "@/components/home/CreateGameForm.vue";
 }
 
 .page__logo {
-  height: 100px;
+  height: 120px;
   position:fixed;
-  top:1%;
+  top:3%;
   left:50%;
   transform : translateX(-50%);
-  width:200px;
+  width:400px;
   @media #{$tablet-landscape} {
     height: 120px;
-    width:240px;
+    width:440px;
   }
 }
 
