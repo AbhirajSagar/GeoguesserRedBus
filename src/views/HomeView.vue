@@ -41,7 +41,7 @@
         }"
       >
         
-        <strong>🚌 easemytrip.com</strong>
+        <strong>🚌 redbus.in</strong>
       </span>
     </footer>
   </div>
@@ -81,15 +81,16 @@ import CreateGameForm from "@/components/home/CreateGameForm.vue";
 }
 
 .page__logo {
-  height: 140px;
+  height: 110px;
   position:fixed;
-  top:1%;
+  top:2%;
   left:50%;
   transform : translateX(-50%);
-  width:290px;
+  width:190px;
   @media #{$tablet-landscape} {
-    height: 170px;
-    width:350px;
+    top:1%;
+    height: 150px;
+    width:250px;
   }
 }
 
