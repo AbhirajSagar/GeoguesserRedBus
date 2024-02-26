@@ -15,14 +15,15 @@
       :y-percent="'30'"
     />
     <AuroraBackground
-      :from="'var(--color-tone-light)'"
+      :from="'var(--color-brand-light)'"
       :x-percent="'0'"
       :y-percent="'0'"
     />
+
     <div :class="$style['page__container']">
      <span :class="$style['page__logo']">
         <img
-        src="@/assets/images/logo.svg"
+        src="@/assets/images/logo.png"
         :class="$style['page__logo']"
         alt="Geoguess Master Logo"
         >
@@ -30,6 +31,7 @@
       <CreateGameForm />
       <span :class="$style['page__title']">Explore Your Next<br>Vacation Adventure &#127758;</span>
     </div>
+ 
     <footer :class="$style['page__footer']">
       <span
         :style="{
@@ -39,7 +41,7 @@
         }"
       >
         
-        <strong>✈️ makemytrip.com</strong>
+        <strong>🚌 abhibus.com</strong>
       </span>
     </footer>
   </div>
@@ -79,16 +81,18 @@ import CreateGameForm from "@/components/home/CreateGameForm.vue";
 }
 
 .page__logo {
-  height: 64px;
+  height: 100px;
   position:fixed;
-  top:5%;
+  top:1%;
   left:50%;
   transform : translateX(-50%);
-  width:500px;
+  width:200px;
   @media #{$tablet-landscape} {
-    height: 80px;
+    height: 120px;
+    width:240px;
   }
 }
+
 
 .page__github-ribbon {
   position: absolute;
@@ -105,7 +109,7 @@ import CreateGameForm from "@/components/home/CreateGameForm.vue";
   position: relative;
   top: 0;
   left: 0;
-  padding-top: 48px;
+  padding-top: 80px;
   width: 100%;
   height: calc(100% - 84px); // header + footer
   @media #{$tablet-landscape} {
@@ -119,11 +123,12 @@ import CreateGameForm from "@/components/home/CreateGameForm.vue";
   font-weight: 700;
   text-align:center;
   color: var(--color-surface-primary);
-
+  line-height:1.19;
   @media #{$tablet-landscape} {
     font-size: 60px;
   }
 }
+
 
 .page__footer {
   @include pagePadding;
