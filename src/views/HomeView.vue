@@ -41,7 +41,7 @@
         }"
       >
         
-        <strong>🚌 cleartrip.com</strong>
+        <strong>🚌 easemytrip.com</strong>
       </span>
     </footer>
   </div>
@@ -81,15 +81,15 @@ import CreateGameForm from "@/components/home/CreateGameForm.vue";
 }
 
 .page__logo {
-  height: 120px;
+  height: 140px;
   position:fixed;
-  top:3%;
+  top:1%;
   left:50%;
   transform : translateX(-50%);
-  width:400px;
+  width:290px;
   @media #{$tablet-landscape} {
-    height: 120px;
-    width:440px;
+    height: 170px;
+    width:350px;
   }
 }
 
